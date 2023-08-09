@@ -1,0 +1,74 @@
+.card-right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 0px 20px 20px 45px;
+  background-color: $color_white;
+  box-shadow: $color_box-shadow;
+
+  &-title {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 800;
+    color: $color_right-card-title;
+  }
+  .values {
+    .worth--reaction {
+      background-color: $color-reaction;
+    }
+    .worth--memory {
+      background-color: $color-memory;
+    }
+    .worth--verbal {
+      background-color: $color-verbal;
+    }
+    .worth--visual {
+      background-color: $color-visual;
+    }
+    &-worth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0px;
+      padding: 8px 8px;
+      border-radius: 5px;
+      font-size: 11px;
+
+      &-name {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .name-title {
+        display: flex;
+        align-items: center;
+        margin: 0px 50px 0px 10px;
+
+        &--reaction {
+          color: $color-title_reaction;
+        }
+        &--memory {
+          color: $color-title_memory;
+        }
+        &--verbal {
+          color: $color-title_verbal;
+        }
+        &--visual {
+          color: $color-title_visual;
+        }
+      }
+
+      .icon {
+        width: 12px;
+        height: auto;
+      }
+
+      .ratio {
+        color: $color_ratio-number;
+        &-strong {
+          color: $color_ratio-strong;
+        }
+      }
+    }
+  }
+}

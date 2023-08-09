@@ -1,0 +1,176 @@
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.button-text {
+  font-size: 10px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(224deg, 30%, 27%);
+  transition: background-color 1s;
+  border: 0;
+  border-radius: 30px;
+  padding: 12px 68px;
+}
+.button-text:hover {
+  background-image: linear-gradient(hsl(251deg, 100%, 63%), hsl(241deg, 81%, 54%));
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: -20px;
+  border-radius: 15px;
+  background-image: linear-gradient(hsl(251deg, 100%, 63%), hsl(241deg, 81%, 54%));
+}
+.card-left-title {
+  font-size: 13px;
+  color: hsl(258deg, 100%, 85%);
+  margin: 20px 0px 20px;
+}
+.card-left .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0px 44px 0px;
+  background-image: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+}
+.card-left .circle-text {
+  display: flex;
+  flex-direction: column;
+}
+.card-left .circle-text__number {
+  font-size: 40px;
+  font-weight: 800;
+  color: hsl(0deg, 0%, 100%);
+}
+.card-left .circle-text__ratio {
+  font-size: 10px;
+  color: hsl(246deg, 100%, 75%);
+}
+.card-left .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.card-left .footer__title {
+  color: hsl(0deg, 0%, 100%);
+  margin: 16px 0px;
+}
+.card-left .footer__text {
+  width: 140px;
+  font-size: 10px;
+  color: hsl(239deg, 73%, 81%);
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  body {
+    align-items: start;
+    margin: 0;
+  }
+  body .card {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .card .card-left {
+    border-radius: 0% 0% 15px 15px;
+    right: 0;
+  }
+  body .card .card-left .footer__text {
+    width: 190px;
+  }
+  body .card .card-right {
+    padding: 0px 20px;
+    box-shadow: none;
+  }
+  body .card .card-right .button {
+    padding-bottom: 20px;
+  }
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 0px 20px 20px 45px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.card-right-title {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  color: hsl(228deg, 16%, 30%);
+}
+.card-right .values .worth--reaction {
+  background-color: hsl(6deg, 100%, 98%);
+}
+.card-right .values .worth--memory {
+  background-color: hsl(42deg, 100%, 97%);
+}
+.card-right .values .worth--verbal {
+  background-color: hsl(173deg, 53%, 97%);
+}
+.card-right .values .worth--visual {
+  background-color: hsl(240deg, 71%, 97%);
+}
+.card-right .values-worth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0px;
+  padding: 8px 8px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.card-right .values-worth-name {
+  display: flex;
+  flex-direction: row;
+}
+.card-right .values-worth .name-title {
+  display: flex;
+  align-items: center;
+  margin: 0px 50px 0px 10px;
+}
+.card-right .values-worth .name-title--reaction {
+  color: hsl(359deg, 87%, 72%);
+}
+.card-right .values-worth .name-title--memory {
+  color: hsl(40deg, 99%, 64%);
+}
+.card-right .values-worth .name-title--verbal {
+  color: hsl(164deg, 46%, 60%);
+}
+.card-right .values-worth .name-title--visual {
+  color: hsl(236deg, 55%, 55%);
+}
+.card-right .values-worth .icon {
+  width: 12px;
+  height: auto;
+}
+.card-right .values-worth .ratio {
+  color: hsl(234deg, 12%, 68%);
+}
+.card-right .values-worth .ratio-strong {
+  color: hsl(229deg, 16%, 26%);
+}/*# sourceMappingURL=main.css.map */
